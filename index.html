@@ -5,21 +5,21 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header>
-      <div class="full-width header-top">
+    <header class="main-header">
+      <div class="header-top">
         <div class="container">
           <div class="user-controls">
             <a href="#" class="logo logo-small"></a>
             <form>
               <label><input  type="search" class="user-controls-search">Поиск</label>
             </form>
-            <b class="user-controls-marker">Закладки:0</b>
-            <b class="user-controls-basket">Корзина:0</b>
+            <a href="#" class="user-controls-marker">Закладки:0</a>
+            <a href="#" class="user-controls-basket">Корзина:0</a>
             <a href="#" class="user-controls-order">Оформить заказ</a>
           </div>
         </div>
       </div>
-      <div class="full-width header-bottom">
+      <div class="header-bottom">
         <div class="container">
           <div class="info">
             <b class="info-title">Интернет-магазин<br>
@@ -31,8 +31,10 @@
             <b class="info-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</b>
           </div>
           <div class="user-block">
-            <a href="#" class="login">Войти</a>
-            <a href="#" class="check-in">Регистрация</a>
+            <div class="user-unlogged">
+              <a href="#" class="login">Войти</a>
+              <a href="#" class="check-in">Регистрация</a>
+            </div>
           </div>
           <ul class="main-navigation">
             <li>Главная</li>
@@ -58,14 +60,14 @@
               <p>Настоящие мужские игрушки</p>
               <a href="#" class="promo-slide-back"></a>
               <a href="#" class="promo-slide-next"></a>
-              <a href="#" class="promo-slide-button"></a>
+              <a href="#" class="promo-slide-button btn-standart"></a>
             </div>
             <div class="slide slide-drills">
               <h2>Дрели</h2>
               <p>Соседям на радость!</p>
               <a href="#" class="promo-slide-back"></a>
               <a href="#" class="promo-slide-next"></a>
-              <a href="#" class="promo-slide-button"></a>
+              <a href="#" class="promo-slide-button btn-standart"></a>
             </div>
           </li>
           <li class="promo-title">Скидки 50%<a href="#" class="promo-button">На 350 товаров</a></li>
@@ -74,42 +76,50 @@
         <div class="products">
           <div class="products-header">
             <h2 class="products-title">Популярные товары:</h2>
-            <a href="#" class="products-all">Все популярные товары</a>
+            <a href="#" class="products-all btn-standart">Все популярные товары</a>
           </div>
           <ul class="products-popular">
             <li class="product">
               <img src="img/product-1.jpg" alt="Изображение товара"><br>
-              <b class="product-name">Перфоратор BOSCH<br>
+              <h3 class="product-name">Перфоратор BOSCH</h3>
                 BFG 9000</b><br>
               <b class="product-price">32500 р.</b><br>
-              <b class="product-discount">25500 р.</b>
+              <div class="product-discount">
+                25500 р.
+              </div>
             </li>
             <li class="product">
               <img src="img/product-2.jpg" alt="Изображение товара"><br>
-              <b class="product-name">Перфоратор BOSCH<br>
+              <h3 class="product-name">Перфоратор BOSCH</h3>
                 BFG 3000</b><br>
               <b class="product-price">22500 р.</b><br>
-              <b class="product-discount">15500 р.</b>
+              <div class="product-discount">
+                15500 р.
+              </div>
             </li>
             <li class="product">
               <img src="img/product-3.jpg" alt="Изображение товара"><br>
               <b class="product-name">Перфоратор BOSCH<br>
                 BFG 6000</b><br>
-              <b class="product-discount">25500 р.</b>
+              <div class="product-discount">
+                25500 р.
+              </div>
             </li>
             <li class="product product-new">
               <img src="img/produc-4.jpg" alt="Изображение товара"><br>
-              <b class="product-name">Перфоратор BOSCH<br>
+              <h3 class="product-name">Перфоратор BOSCH</h3>
                 BFG 2000</b><br>
               <b class="product-price"></b><br>
-              <b class="product-discount">12500 р.</b>
+              <div class="product-discount">
+                12500 р.
+              </div>
             </li>
           </ul>
         </div>
         <div class="vendors">
           <div class="vendors-header">
             <h2 class="vendors-title">Популярные производители:</h2>
-            <a class="vendors-all">Все производители</a>
+            <a href="#"class="bth btn-standard">Все производители</a>
           </div>
           <ul class="vendors-popular">
             <li><img src="img/vendor-1.jpg" alt="логотип производителя"></li>
@@ -130,9 +140,9 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покурки приятными.</p>
           <div class="tab">
             <ul class="tab-controls">
-              <li><a href="#" class="tab-1 delivery">Доставка</a></li>
-              <li><a href="#" class="tab-2 guarantee">Гарантия</a></li>
-              <li><a href="#" class="tab-3 credit">Кредит</a></li>
+              <li><a href="#" class="delivery" id="tab-1">Доставка</a></li>
+              <li><a href="#" class="guarantee" id="tab-2">Гарантия</a></li>
+              <li><a href="#" class="credit" id="tab-3">Кредит</a></li>
             </ul>
           </div>
           <ul class="services-button-content">
@@ -144,7 +154,6 @@
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!
               </p>
-              <img src="img/services1.jpg" alt="рисунок">
             </li>
             <li class="services-button-content-2">
               <h2>Гарантия</h2>
@@ -155,7 +164,6 @@
                 сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.
               </p>
-              <img src="img/services2.jpg" alt="рисунок">
             </li>
             <li class="services-button-content-3">
               <h2>Кредит</h2>
@@ -183,7 +191,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="about-us-more">Подробнее окомпании</a>
+          <a href="#" class="about-us-company">Подробнее окомпании</a>
         </div>
         <div class="contacts">
           <h2>контакты</h2>
@@ -196,7 +204,7 @@
         </div>
       </div>
     </main>
-    <div class="footer">
+    <footer>
       <div class="footer-top">
         <div class="container">
           <div class="footer-contacts">
@@ -244,6 +252,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
