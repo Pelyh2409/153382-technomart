@@ -1,17 +1,21 @@
 
 body{
-font-family: "PTSans Regular";
-font-size:13px;
-line-height: 24px;
-color:#000000;
+  font-family: "PTSans Regular","Tahoma", "sans-serif";
+  font-size:13px;
+  line-height: 24px;
+  color:#000000;
 }
 h1{
-font-family: "Cuprum Regular";
-font-size: 30px;
-text-transform: uppercase;
+  font-family: "Cuprum Regular","Tahoma", "sans-serif";
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 24px;
+  color:#000000;
 }
 h2{
-  font-family: "PTSans Bold";
-font-size: 18px;
-line-height: 20px;
+  font-family: "PTSans Bold","Tahoma", "sans-serif";
+  font-size: 18px;
+  line-height: 20px;
+  line-height: 24px;
+  color:#000000;
 }
